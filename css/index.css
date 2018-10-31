@@ -4,22 +4,42 @@ body{
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'Khula', sans-serif;
 }
-header{
-	position: absolute;
-}
 .navigate{
-	margin-left: 25px;
-	display: inline-block;
-	position:relative;
-}
-.navigate h2{
-	display: inline-block;
-	margin-top: 0;
+  display:flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
 }
 .portada{
 	background-image: url(../images/portada.png);
 	background-size: cover;
 	height: 650px;
+}
+.navigate h2 {
+  margin:0 15px;
+}
+.menu ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin:0;
+}
+.menu2 ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin:0;
+}
+.menu li {
+  padding: 0 20px;
+}
+.menu2 a {
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  vertical-align: sub;
+  color:black;
 }
 .Titulos{
 	margin-left: 132px;
@@ -45,34 +65,6 @@ header{
 	text-decoration: none;
 	color:#ff3366;
 }
-.menu{
-	display: inline-block;
-	right: 0;
-	top:0;
-	margin-top: 0;
-}
-.menu li{
-	display: inline-block;
-	margin-left: 20px;
-	font-size: 12px;
-}
-.menu a{
-	text-decoration: none;
-	color: black;
-}
-.menu2{
-	display: inline-block;
-	margin: 0 0 0 575px;
-	font-size: 0;
-}
-.menu2 li{
-	display: inline-block;
-
-}
-.menu2 a{
-	text-decoration: none;
-	font-size: 14px;
-}
 .EN{
 	color:black;
 	margin-right: 10px;
@@ -80,7 +72,7 @@ header{
 .us{
 	color: grey;
 }
-.testride{
+.testride {
 	background-color: black;
 	color:white;
 	padding: 25px 40px;
@@ -94,28 +86,40 @@ header{
 	font-size: 12px;
 }
 .rose{
-	background-color: #ff3366;
-	height: 90px;
-	padding:40px;
-	text-align: center;
+  background-color: #ff3366;
+  padding: 20px 0;
 }
-.rose li{
-	display: inline-block;
-	text-decoration: none;
-	margin-right: 60px;
-	line-height: 30px;
+.caja-rose {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 0.8;
+}
+.caja-rose li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 	color: white;
-	font-size: 40px;
+  font-size: 40px;
+  padding: 0 20px;
+  text-align: center;
+  align-items: center;
 }
 .td{
-	font-size: 10px;
-	line-height: 2px;
+  font-size: 10px;
 }
 .TC{
 	font-family: 'Squada One', cursive;
 }
 .libre{
-	font-family: 'PT Serif', serif;
+  font-family: 'PT Serif', serif;
+  line-height: 0.3;
+}
+.libre2{
+  font-family: 'PT Serif', serif;
+  line-height: 1;
 }
 .rtbf{
 	font-family: 'Orbitron', sans-serif;
@@ -123,23 +127,25 @@ header{
 .grilla{
 	display: grid;
 	grid-template-columns:50% 50%; 
-	grid-template-rows:600px 600px 600px;
+	grid-template-rows:1fr 1fr 1fr;
 }
-.item{
-	margin:auto;
-	margin-left: 90px;
+.bici {
+  width: 100%;
+  height: 100%;
+}
+.image-desing {
+  width: 100%;
+  height: 100%;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
 }
 .desing h2{
 	font-size: 55px;
-	line-height: 50px;
-}
-.more h2{
-	font-size: 55px;
-	line-height: 50px;	
-}
-.never h2{
-	font-size: 55px;
-	line-height: 50px;
+  line-height: 50px;
 }
 .reviews{
 	height: 300px;
